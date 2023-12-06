@@ -9,4 +9,7 @@ interface AccountDao {
     fun increaseAccountSumByName(name: String, sum: Long): AccountEntity
 
     fun saveAccount(accountEntity: AccountEntity): Boolean
+
+    fun transfer(nameFrom: String, nameTo: String, sum: Long) : Pair<AccountEntity, AccountEntity>
+    fun transfer(accountEntityFrom: AccountEntity, accountEntityTo: AccountEntity, sum: Long) : Pair<AccountEntity, AccountEntity>
 }
