@@ -11,6 +11,8 @@ repositories {
 }
 
 dependencies {
+    // https://mvnrepository.com/artifact/commons-io/commons-io
+    implementation("commons-io:commons-io:2.15.1")
     testImplementation(kotlin("test"))
 }
 

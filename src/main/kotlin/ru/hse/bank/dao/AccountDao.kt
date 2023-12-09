@@ -6,7 +6,7 @@ interface AccountDao {
 
     fun findAccountByName(name: String): AccountEntity
 
-    fun increaseAccountSumByName(name: String, sum: Long): AccountEntity
+    fun increaseAccountSumByName(name: String, value: Long): AccountEntity
 
     fun saveAccount(accountEntity: AccountEntity): Boolean
 }
